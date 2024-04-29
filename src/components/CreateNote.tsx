@@ -11,8 +11,13 @@ export default function CreateNote() {
     const { mutate } = api.todo.create.useMutation({
         onSettled: async () => {
             await trpc.todo.all.invalidate()
-        }
+            setNewNote('')
+        },
+        
+
     });
+
+    
 
     return (
         <div>
