@@ -1,29 +1,58 @@
-# Create T3 App
+# NOTE T3 APP
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+![logo](https://i.ibb.co/nc3KLpx/teste.png")
 
-## What's next? How do I make an app with this?
+## 👨‍🚀 Introduction
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+This project uses the following technologies:
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- [**create-t3-app**](https://create.t3.gg) - The best way to start a full-stack, typesafe Next.js app.
+- [**Prisma**](https://prisma.io) - A next-generation Node.js and TypeScript ORM.
+- [**tRPC**](https://trpc.io/) - Move Fast and Break Nothing. End-to-end typesafe APIs made easy.
+- [**TailwindCSS**](https://tailwindcss.com) - Design System.
+- [**ReactHotToast**](https://www.npmjs.com/package/react-hot-toast) - Smoking hot Notifications for React.
+- [**SQLite**](https://www.sqlite.org/) - Database.
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+**Requirements:**
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- [x] [Node.js](https://nodejs.org) (+v18.x) installed.
+- [x] [Visual Studio Code](https://code.visualstudio.com) with the recommended extensions installed (ESLint, Prettier, Tailwind CSS IntelliSense, Prisma).
+- [x] [SQLite](https://www.sqlite.org/) (+V3.45.3) installed.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+**Steps:**
 
-## How do I deploy this?
+1. Fork this project:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- [Click here](https://github.com/Hugocorreaa/note-t3-app/fork/).
+
+2. Clone the repository:
+
+```bash
+git clone git@github.com:YOU_USER/note-t3-app.git
+```
+
+3. Install dependencies:
+
+```bash
+# install dependencies:
+npm install
+```
+4. Create a **.env** file with the following content:
+
+```bash
+# Database:
+DATABASE_URL="file:./db.sqlite"
+```
+4. Initialize prisma database:
+
+```bash
+npm run db:push
+```
+
+5. Run aplication
+```bash
+npm run dev
+```
